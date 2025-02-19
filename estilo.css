@@ -217,7 +217,7 @@ section{
     min-height: 100vh;       
     display: flex;
     align-items: center;      
-    background:url(../images/home-img.jpeg) no-repeat; 
+    background:url(imagens/plano_de_fundo.jpg) no-repeat; 
     background-size: cover;    
     background-position: center; 
 }
