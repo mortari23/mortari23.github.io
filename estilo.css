@@ -30,7 +30,7 @@ html ::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background: transparent;
+    background: white;
 }
 
 html::-webkit-scrollbar-thumb{
@@ -283,6 +283,55 @@ section{
     line-height: 1.8;    
 }
 
+.carousel {
+    width: 50%;
+    height: 500px;
+    position: relative;
+  }
+  
+  .slides {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .navigation {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation label {
+    width: 20px;
+    height: 20px;
+    background-color: #cccccca2;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  #slide1:checked ~ .slides .slide:nth-child(1),
+  #slide2:checked ~ .slides .slide:nth-child(2),
+  #slide3:checked ~ .slides .slide:nth-child(3) {
+    display: block;
+  }
+
 /*Seção Produtos */
 
 .products .box-container{
@@ -346,6 +395,7 @@ section{
     font-size: 1.5rem; 
 }
 
+/* contato */
 
 .contact .row{
     display: flex; 
