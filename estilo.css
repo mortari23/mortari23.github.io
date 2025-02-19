@@ -73,7 +73,7 @@ section{
 }
 
 
-
+/* header - topo */
 
 .topo{
     background:var(--bg);
@@ -211,4 +211,32 @@ section{
 .header .cart-items-container .btn{
     width: 100%;             
     text-align: center;       
+}
+
+.home{
+    min-height: 100vh;       
+    display: flex;
+    align-items: center;      
+    background:url(../images/home-img.jpeg) no-repeat; 
+    background-size: cover;    
+    background-position: center; 
+}
+
+
+.home .content{
+    max-width: 60rem;         
+}
+
+.home .content h3{
+    font-size: 6rem;         
+    text-transform: uppercase; 
+    color:#fff;              
+}
+
+.home .content p{
+    font-size: 2rem;         
+    font-weight: lighter;     
+    line-height: 1.8;         
+    padding:1rem 0;          
+    color:#eee;             
 }
