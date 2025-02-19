@@ -134,44 +134,43 @@ section{
 }
 
 .header .search-form.active{
-    transform: scaleY(1);         /* Mostra o formulário */
+    transform: scaleY(1);        
 }
 
 .header .search-form input{
-    height: 100%;                /* Altura total */
-    width: 100%;                 /* Largura total */
-    font-size: 1.6rem;           /* Tamanho da fonte */
-    color:var(--black);          /* Cor do texto preto */
-    padding:1rem;               /* Padding interno */
-    text-transform: none;        /* Sem transformação de texto */
+    height: 100%;               
+    width: 100%;              
+    font-size: 1.6rem;           
+    color:var(--black);       
+    padding:1rem;             
+    text-transform: none;        
 }
 
 .header .search-form label{
-    cursor: pointer;             /* Ícone clicável */
-    font-size: 2.2rem;          /* Tamanho do ícone */
-    margin-right: 1.5rem;       /* Espaçamento à direita */
-    color:var(--black);         /* Cor preta */
+    cursor: pointer;          
+    font-size: 2.2rem;          
+    margin-right: 1.5rem;      
+    color:var(--black);         
 }
 
 .header .search-form label:hover{
-    color:var(--main-color);    /* Cor principal no hover */
+    color:var(--main-color);   
 }
 
-/* Carrinho de compras estilo sidebar */
+
 .header .cart-items-container{
-    position: absolute;          /* Posicionamento absoluto */
-    top:100%; right: -100%;      /* Inicialmente fora da tela */
-    height: calc(100vh - 9.5rem); /* Altura calculada */
-    width: 35rem;               /* Largura fixa */
-    background: #fff;            /* Fundo branco */
-    padding:0 1.5rem;           /* Padding interno */
+    position: absolute;          
+    top:100%; right: -100%;   
+    height: calc(100vh - 9.5rem); 
+    width: 35rem;            
+    background: #fff;          
+    padding:0 1.5rem;         
 }
 
 .header .cart-items-container.active{
-    right: 0;                   /* Mostra o carrinho */
+    right: 0;                   
 }
 
-/* Itens do carrinho */
 .header .cart-items-container .cart-item{
     position: relative;      
     margin:2rem 0;              
