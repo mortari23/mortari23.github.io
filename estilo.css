@@ -3,6 +3,7 @@
 :root{
     --main-color:#5a9cf1;
     --black:#ffffff23;
+    --fundo:#3d3d3d49;
     --bg:#00031f;
     --border:.1rem solid rgba(83, 102, 207, 0.3);
 }
@@ -239,6 +240,13 @@ section{
     line-height: 1.8;         
     padding:1rem 0;          
     color:#eee;             
+}
+
+.home .row{
+    display: flex;          
+    align-items: center;    
+    background:var(--fundo);  
+    flex-wrap: wrap;          
 }
 
 /* sobre */
