@@ -442,13 +442,12 @@ section {
     flex: 1 1 45rem;
     width: 100%;
     object-fit: cover;
-    
 }
 
 .contact .row form {
     flex: 1 1 45rem;
     padding: 5rem 2rem;
-    text-align: left;
+    text-align: center;
 }
 
 .contact .row form h3 {
@@ -467,10 +466,6 @@ section {
     border-radius: 8px;
 }
 
-.contact .row form .p{
-    font: 30;
-}
-
 .contact .row form .inputBox span {
     color: var(--text-primary);
     font-size: 2rem;
@@ -484,13 +479,6 @@ section {
     color: var(--text-primary);
     text-transform: none;
     background: none;
-}
-
-.contact.icons{
-    color: var(--text-primary);
-    cursor: pointer;
-    font-size: 2.5rem;
-    margin-left: 2rem;
 }
 
 /* Rodapé */
