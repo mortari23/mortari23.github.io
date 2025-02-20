@@ -247,8 +247,8 @@ section {
 }
 
 .home .content h3 {
-    color: var(--text-primary);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
     font-size: 6rem;
     text-transform: uppercase;
 }
@@ -467,8 +467,8 @@ section {
     border-radius: 8px;
 }
 
-.contact .row form .p{
-    font: 30;
+.contact .row form .text{
+    font: 50;
 }
 
 .contact .row form .inputBox span {
