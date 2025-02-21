@@ -34,4 +34,3 @@ window.onscroll = () => {
     searchForm.classList.remove('active');      // Fecha a busca ao scrollar
     cartItem.classList.remove('active');        // Fecha o carrinho ao scrollar
 }
-

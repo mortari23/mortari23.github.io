@@ -11,6 +11,7 @@
     --success: #66BB6A;           /* Verde para confirmações */
     --border-color: #2D4263;      /* Borda sutil */
     --hover-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --credit-color: #7db0e2;
 }
 
 /* Aplicação das novas cores */
@@ -365,7 +366,7 @@ section {
 /* Seção Produtos */
 .products .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -374,7 +375,7 @@ section {
     border: var(--border);
     padding: 2rem;
     background: rgba(255, 255, 255, 0.02);
-    border-radius: 12px;
+    border-radius: 16px;
     transition: var(--hover-transition);
 }
 
@@ -419,16 +420,9 @@ section {
     color: var(--main-color);
 }
 
-.products .box-container .box .content .price {
-    color: var(--text-primary);
-    font-size: 2.5rem;
-}
 
-.products .box-container .box .content .price span {
-    text-decoration: line-through;
-    font-weight: lighter;
-    font-size: 1.5rem;
-}
+
+
 
 /* Contato */
 .contact .row {
@@ -456,6 +450,16 @@ section {
     font-size: 3.5rem;
     color: var(--text-primary);
 }
+ form .text {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #ffffff91;
+}
+form .img{
+    align-items: right;
+   width: 30px;
+}
 
 .contact .row form .inputBox {
     display: flex;
@@ -467,9 +471,7 @@ section {
     border-radius: 8px;
 }
 
-.contact .row form .text{
-    font: 50;
-}
+
 
 .contact .row form .inputBox span {
     color: var(--text-primary);
@@ -486,6 +488,7 @@ section {
     background: none;
 }
 
+
 .contact.icons{
     color: var(--text-primary);
     cursor: pointer;
@@ -494,10 +497,13 @@ section {
 }
 
 /* Rodapé */
-.footer {
+
+footer {
     background: var(--fundo);
+    position: relative;
     text-align: center;
     border-top: var(--border);
+    padding: 50px 0px 20px 0px;
 }
 
 .footer .share {
@@ -519,27 +525,34 @@ section {
     background-color: var(--main-color);
 }
 
-.footer .links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-    gap: 1rem;
+footer h4 {
+    color: #919496;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
-.footer .links a {
-    padding: .7rem 2rem;
-    color: var(--text-primary);
-    border: var(--border);
-    font-size: 2rem;
+footer .navbar-nav a {
+    padding: .7rem 1rem;
+    color: var(--text-primary);;
+    font-size: 1em;
 }
 
-.footer .links a:hover {
+footer .navbar-nav a:hover {
     background: var(--main-color);
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0px 5px;
 }
 
 .footer .credit {
-    font-size: 2rem;
+    font-size: rem;
     color: var(--text-primary);
     font-weight: lighter;
     padding: 1.5rem;
