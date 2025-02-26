@@ -100,7 +100,7 @@ section {
     background: rgba(10, 25, 47, 0.95);
     display: flex;
     align-items: center;
-    justify-content:left;
+    justify-content: space-between;
     padding: 1.5rem 7%;
     border-bottom: var(--border);
     position: fixed;
@@ -111,25 +111,19 @@ section {
 }
 
 .header .logo img {
-    height: 8rem;
-    
+    height: 6rem;
 }
 
-
 .header .navbar a {
-    
     margin: 0 1rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--text-primary);
-   left: 500;
-   
 }
 
 .header .navbar a:hover {
     color: var(--main-color);
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
-    left: 500;
 }
 
 .header .icons div {
@@ -514,7 +508,6 @@ footer {
 
 .footer .share {
     padding: 1rem 0;
-  
 }
 
 .footer .share a {
@@ -530,7 +523,6 @@ footer {
 
 .footer .share a:hover {
     background-color: var(--main-color);
-    
 }
 
 footer h4 {
