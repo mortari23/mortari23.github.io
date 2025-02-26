@@ -1,0 +1,36 @@
+/* Sobre Nós */
+.about .container {
+    padding: 4rem 0;
+  }
+  
+  .about .carousel {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+  
+  .about .carousel-item {
+    height: 400px; /* Altura fixa para o carrossel */
+  }
+  
+  .about .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .about .content {
+    background: var(--black);
+    border-radius: 10px;
+    height: 100%;
+  }
+  
+  .about .content h3 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }

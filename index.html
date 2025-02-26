@@ -1,131 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ortomedico</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ortomedico</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- icone/logo -->
+  <link rel="shortcut icon" href="imagens/9f2722b3-0805-4776-a08c-dc36f13b5b14.webp" type="image/x-icon">
 
-    <link rel="stylesheet" href="estilo.css">
+  <!-- Boxicon -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="estilo.css">
 
 </head>
-<body>
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="imagens/logo.png" alt="Logo da Ortomedico">   
-        </a>
-        <!-- ainda não tem Logo -->
 
-        <!-- Menu de Navegação -->
-         <nav class="navbar">
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="imagens/logo.png" alt="Logo da Ortomedico">
+    </a>
+    <!-- ainda não tem Logo -->
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+      <a href="#home">início</a>
+      <a href="#about">Sobre Nós</a>
+      <a href="#products">Produtos</a>
+      <a href="#location">Localização</a>
+    </nav>
+    <!-- Icone de Funcionalidades -->
+    <div class="icons">
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-shopping-cart" id="cart-btn"></div>
+      <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <!-- Formulario de Pesquisa -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="pesquisar aqui...">
+      <label for="search-box" class="fas fa-search"></label>
+    </div>
+  </header>
+
+  <!-- seção Home banner principal -->
+  <section class="home" id="home">
+    <!-- <div class="row"> -->
+    <div class="content">
+      <h3>conforto que você sente, qualidade que você confia!</h3>
+      <a href="#" class="btn">Confira os produtoas agora</a>
+    </div>
+    <!-- </div> -->
+  </section>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h1 class="heading"><span>Sobre</span> Nós</h1>
+      <div class="row">
+        <!-- Carousel -->
+        <div class="col-md-6">
+          <div id="carousel-controles" class="carrossel carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img src="./imagens/faixada.jpg" alt="Faixada" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagens/dentro1.jpg" alt="Dentro 1" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagens/dentro2.jpg" alt="Dentro 2" class="img-fluid">
+              </div>
+            </div>
+
+            <a href="#carousel-controles" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#carousel-controles" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="col-md-6">
+          <div class="content">
+            <h3>Quem Nós Somos ?</h3>
+            <p>
+              Somos uma empresa local dedicada a oferecer [produtos/serviços
+              oferecidos] de alta qualidade, sempre com um atendimento
+              personalizado e preços acessíveis. Nosso objetivo é proporcionar a
+              melhor experiência aos nossos clientes, garantindo confiança, com
+              Estamos localizados em [endereço ou bairro] e atendemos tanto
+              presencialmente quanto online! Venha nos visitar e conhecer nossas
+              ofertas especiais.
+            </p>
+            <a href="#location" class="btn">Visite Nossa Loja</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Exibição de produtos  -->
+  <section class="products" id="products">
+    <h1 class="heading">Nossos <span>Produtos</span></h1>
+    <div class="box-container">
+      <!-- Cards de Produtos (colocar imagens dos produtos) -->
+      <div class="box">
+
+        
+        <img src="imagens/bota_ortopedica.jpg" alt="Produto" width="250">
+        <h3>Bota Ortopedica</h3>
+        <p>
+          descrição produto aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+      <a href="#location" class="btn">Compre na Loja</a>
+      </div>
+     
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </section>
+
+
+
+
+  <!-- Fale com Conosco -->
+  <section class="contact" id="location">
+    <h1 class="heading"><span>Fale com</span> Nós</h1>
+    <div class="row">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2217.7099112063934!2d-49.39045937876682!3d-20.802263757708065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad6a77a15555%3A0x5397c897f34b8baf!2sR.%20Tiradentes%2C%202049%20-%20Parque%20Industrial%2C%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%20-%20SP%2C%2015025-050!5e0!3m2!1spt-BR!2sbr!4v1739994335366!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <form>
+        <h3>Onde estamos?</h3>
+        <br><br>
+        <img class="img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADIklEQVR4nO2a2WtTQRTGJ4m2sUWpCC7FB62oII1NUFtRqBTEpRgVH6qCVkX0odQWF7QQraRF1Kqt9y/+5MB3ZQwzkzt3R3LhQLh3zvKb7cwSpTJ8ANQAtAAsAugA+EHp8J18q6kyPwCmAKwDCPrIJwBnVdkeABUAtyMA9IroVFRZHgB3YkCE0lYl6k5BQmkUDVFjf08Ksh5rAgDwirPINIBqApBWChABpRnRZwPAmjAowwxyIQ4Qp1NbYF12u2FKg5VnK/+4j6/jAFZ1nV6QUD76AjkCE4gRQ/kRfjPpdCw+DgF4btKxgXgDAdiy2Jhy6DQtOls95fYBWACwY4u1H8jfGjIBATgWDkwAvyy6ww6QukXnp5aT5rkacMYYFUQHOs8+HvbR/XS6GQNkj0Vng9/HosbmC2KSCTpd8c0Ljplumd8n8gS5TKd3Ha1oGuyjjsHeZpnZPEGe0ukpR5kuB3ad0nJABForP8sT5DuzehXA1xTsfaGt3Y6ZMBMQkdMRkmJUeUhbkz56aYHc9x2cDjlKW4+KAJF5fpQBvElgZ5k29kouKQJE5CqDOJfAxiRtzPvqpgnS1Qb9Wgx9aUnJ5EMc8IWBiFxhjZ6JoXuSutfi+E4bRGqyzoCWPPReaEnyWxlARG5pS27bQrJ3ojhAnXtx/WYBsg3gMAO7EaH8HMuOU7c0IAEXkBUO/g+Ocm85OVT5OygbiL6YHLfkBOlSB1lmLqk/lSGIHuisA/SIb/JDziBh19nFgJ9o7xf5ThaG79PwpTIGEVlg0ENMeq/lN989SMuPygFEZMawsZpJ04fKCWSHGXuMct11IoISg2QuqugABiAYtAgK7z4YjBEUX9MYtAiKr10MWgT/R4usFh1ECrKiuM2cTulq2XTVfJGn7+8ysL8pG7R/btK4x272uW2NKp/ljCvcVGk+5Gz4JYDfKew+2+HRk+0WKQmQEcDgY5yH1L6nJttyYC6Xoy77SYAE4JLvPxZ4W3sz4qHckuzvfez7AIUAsf8xQR91tuSGwYdsj08ksd/rLJwUBEhEtqqJAAw+5DBCBq/Yl4PwyH+w+QMrh/Rw9wDspQAAAABJRU5ErkJggg=="
+          alt="map-marker--v1">
+        <label class="text">R. Tiradentes, 2049 - Parque Industrial, São José do Rio Preto - SP, 15025-050</label>
+
+        <br> <br>
+
+        <img class="img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADEklEQVR4nO2a+0sUURTHV622h0mZUUFEP6VkUmrQD5XaD0EIZUhZSJgFq0kP6AHBqtmLlcJH9y/+xKHzwzDdmbl3ZvbuIF44sOzM/d7z3XvOueecu7Xa/tijAzgKjAAzwDKwCmwCOyryuanPZvTdI7UqDOAAcB1YAXYB4yky5xUwLli1DhA4CNwBvudQPkkEa0qwQ5G4DKyXSCAu68BQu81oto0E4vKs9N0BjgOfApIwKh9l7bJI9LfZlLJkTXQoSqJXw2inSJiI3/QViUydMCeTYmb+IRqYq4DyJiaP8oRYU1EZ8gmzVfALk+Iv2WFZT2wXQMmfJoFDQBcwCPwJRGbSZTdc046blvmNQES+pTq+JoAuQO8S5g8FNLHxNCIrjiCjCfO7AvrXclo94ZqKD6T8GJOBiOwCh20KjHiAJNqnFEsaCEKQuWJT4KEHQG8KkYGA0euBTYElD4DhBBI9wJtAJIzobFNizQPgRUXSmlWbEi0PAPGBkxaMt4GJtGxEfB100YJxBtgKSGTbRiSPAlctOLc6TeRHDqBNW/UWsLZv2Yg0c4J9BuqWEz4rnG8U6IcZlWbR8BsX6R52J+Ruv22/JHAqcu7M5TTtho3IdMFtnpedsOCeABYih6TswCXLe33AfeBX0QPRJ0VJ60X1/Af+D/+0LAxcsz2PvWdyH8yaI22XQOa1JKBpymYQOea4zo41aSy5MNqwmU/J/YKlMgorFxGfeCo+4kmk4Yg/lgYiSd/XEskYNdfHwAWHMnvOo9S1+mIU8HbJRKIiZ9Vd4Lw2LerakpVs4IsHzoTL1va3kUgZsurUcQRuVEBZk+J3g5kklMjzCihsEmTWlUS3Z10SUj5kOniEyMUKKGwS2qTuFz7AvQoobSzO7XfRA7yvoDn1+pLwadCFkCd5L3ZGK2RKg94EIkTmHRaRiPZS26JTmhyWRUDSjonC/4BQoDj4T+lhadpyLl44abge10QvT4W3q5XpmHNozRpyVaANiEXNfc7aKr6U+XUtzqaVWFPxtrR2aOl3DS2whuO1/v6o7aHxF1j+95Jf45ErAAAAAElFTkSuQmCC"
+          alt="whatsapp--v1"><label class="text">(17)3305-1225</label><br><br>
+
+        <img class="img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACcElEQVR4nO2Z30sbQRDHrxYUW5Aa9EXwSaqpxV+00Ad9LBRFi7S0UGipFtJgCz5UiNi89cHYWEP2L/6UxREOievu3dzdBjLwBYVlZj53e7OzkyQZ2cjiNmACWAb2gO9AG+gAPZH9+zfQkDV27UQSgwEPJKFD4AowgfoHHADPrK+kIoh14DRD8nepBayVCTAL/FQEuK0fwEzREGvARYEQRtQFXhT1LWyXAGBuaU/t2xGIjxVAGNEHFRh5KqZi7eSF2IgAwohe5qlOXaUk7HnxSUq29fsYmAQeATVgDti/x8ffTNVMscTacjrlEe+Vh6+jUIh1JYgmMOYZ0wfEajWkSmmc2Od2CwU8PF+QllcVk95J423s+kIEghig7uPwUAlkzhFjHngvsW50EuD7q08rnqWLHVRhxhwQPYUqOF7Gtmo5YnxWilEv4xQ/dsT4U/g3yPXNTiNI01ER824rI2q4QNoFgzxU8m/stdkF0hkikHMXSG+IQK60QVal+UvrzunIgLU3ehsYt+cCyXKNXUoUTKYpRmtrtSsEsT1USNwzl7NmFSBSli81y+9uRSA11esv8DyDwy3pn9KacTz5+QHa1G5RxjO84irK76WzaVRs44sGOXBCSLD6EIAs+oDYfXwWMUjrXohUwJWIQZa9QRTGQUWBHAVBpGp7NyKQC2A6GEQC24awHwFI345vM0Gkgu9EALKdCyKVwLsKQfZVIFJJvA7YZhogfbU3keOnt7wgHe8Zbw6Ymse0JQ9IA3hSKMSATvlEEeRX8GGnacAC8EXGpKEgXZk8LiSxGNdJLgJvbGFwrPkma57a/8vPdGQjS0LsPyVQZt2PYJ3AAAAAAElFTkSuQmCC"
+          alt="facebook-new"><label class="text">OrtoMédica</label><br><br>
+
+        <img class="img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACeUlEQVR4nO2ZzWsTQRTAFwXT9hSwjYIa0UJ7av0bNL21emiLtvFu7aYtXm1uORhNI3T+4p88fQvjQma/JplN2AcPQth58368j3m7E0WNNBJegA5wAAyAW+AOMJ5UbInNGOjJXvMA6KrzZsH6DXjlA+AhcArcB4Awqvfqw4OyEBvAVUAAk1LJiI0ykQiRSiZDb8S3IiCnNXDazNCTIoUdsiZMhopvL/KA1DGlTErjPOdESAcvgLbqRcazWy6Qg8AgbcuXdsazPRdIvEQgsQtk6MGZMXAO7GmqPlLt6H99fSYrtb5m7DN0gUwqAEyBQ2DNWYj/9lkHjnRN2f0mrg3KGh3ZLRHYBc40wnfWQCj/7aZa/ajsvpFnkFGS25o+NznWXCddR9NoFBpkmkQC2Hbk/qxa2rYiUzjNfIIcWpEoAmHDbKqN96FAxIl1XZcnnWbpldUAxiFAzq3CNhV1R231Q4Ds6ZozDyCf1NZ+CJCOx0P01qo1s2iQlodD9L/DDWgtO8gvtbXWpJYtAYv9o9p6EyIi/Tm038+hD8TrChAD60D8GQJE9EjXPQZ+VBxRPhRd7xNEBr1uyaFRwF/r2pehh0aTGuM3c36dHFiRqMUYbyyYrmVnR8YOfZmaqH6X7pQUthWJubxYTSrATHUU/9sAXKKFLTXxe16vusMKhhMd6xQrA+ATHTta+ntfW2yh7kSJjw+hPweZAnrpAunVwEGTU9+6QLZq4KDJqZ3V/4gtAjxbiWuFJbjoOY7yilw8rsTVm3UZWieYQZ7D1hWZkxpcTx+Xvp5OAT0FvgSAiIHnlQFmnDM93SAZCH05LbbE5iXwznm11kgj0cLkD5fPS2upEL9eAAAAAElFTkSuQmCC"
+          alt="instagram-new--v1">
+          <label class="text">OrtoMédica</label>
+      </form>
+
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="share">
+          <!-- Colocar as redes sociais ou outra coisa (email) -->
+        </div>
+        <div class="col-md-3">
+          <img src="imagens/LOGO ORTOMEDICA-Photoroom.png" alt="Logo" width="142" />
+        </div>
+        <div class="col-md-3 links">
+          <h4>Navegue</h4>
+          <ul class="navbar-nav">
             <a href="#home">início</a>
             <a href="#about">Sobre Nós</a>
             <a href="#products">Produtos</a>
             <a href="#location">Localização</a>
-         </nav>
-         <!-- Icone de Funcionalidades -->
-          <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-          </div>
+          </ul>
+        </div>
 
-          <!-- Formulario de Pesquisa -->
-           <div class="search-form">
-            <input type="search" id="search-box" placeholder="pesquisar aqui...">
-            <label for="search-box" class="fas fa-search"></label>
-           </div>
-           </header>
+        <div class="col-md-3 links">
+          <h4>Marcas que trabalhamos</h4>
+          <ul class="navbar-nav">
+            <a href="https://www.venosan.com.br/">Venosan</a>
+            <a href="https://www.3m.com.br/3M/pt_BR/3m-do-brasil/">3M</a>
+            <a
+              href="https://hidrolight.com.br/?gad_source=1&gclid=CjwKCAiA5eC9BhAuEiwA3CKwQkFiHpdx6Bqq4FQKcvdeU_aoQqhvH0182IF0gcoCPq0OHW_aGOB2lRoCBwYQAvD_BwE">Hidrolight</a>
+          </ul>
+        </div>
 
-           <!-- seção Home banner principal -->
-            <section class="home" id="início">
-                <div class="row">
-                 <div class="content">
-                    <h3>conforto que você sente, qualidade que você confia!</h3>
-                    <a href="#" class="btn">Confira os produtoas agora</a>
-                 </div>
-                </div>
-            </section>
+        <div class="col-md-3 links">
+          <h4>Redes sociais</h4>
+          <ul class="navbar-nav">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                viewBox="0,0,256,256">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8.53333,8.53333)">
+                    <path
+                      d="M15,3c-6.627,0 -12,5.373 -12,12c0,2.25121 0.63234,4.35007 1.71094,6.15039l-1.60352,5.84961l5.97461,-1.56836c1.74732,0.99342 3.76446,1.56836 5.91797,1.56836c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM10.89258,9.40234c0.195,0 0.39536,-0.00119 0.56836,0.00781c0.214,0.005 0.44692,0.02067 0.66992,0.51367c0.265,0.586 0.84202,2.05608 0.91602,2.20508c0.074,0.149 0.12644,0.32453 0.02344,0.51953c-0.098,0.2 -0.14897,0.32105 -0.29297,0.49805c-0.149,0.172 -0.31227,0.38563 -0.44727,0.51563c-0.149,0.149 -0.30286,0.31238 -0.13086,0.60938c0.172,0.297 0.76934,1.27064 1.65234,2.05664c1.135,1.014 2.09263,1.32561 2.39063,1.47461c0.298,0.149 0.47058,0.12578 0.64258,-0.07422c0.177,-0.195 0.74336,-0.86411 0.94336,-1.16211c0.195,-0.298 0.39406,-0.24644 0.66406,-0.14844c0.274,0.098 1.7352,0.8178 2.0332,0.9668c0.298,0.149 0.49336,0.22275 0.56836,0.34375c0.077,0.125 0.07708,0.72006 -0.16992,1.41406c-0.247,0.693 -1.45991,1.36316 -2.00391,1.41016c-0.549,0.051 -1.06136,0.24677 -3.56836,-0.74023c-3.024,-1.191 -4.93108,-4.28828 -5.08008,-4.48828c-0.149,-0.195 -1.21094,-1.61031 -1.21094,-3.07031c0,-1.465 0.76811,-2.18247 1.03711,-2.48047c0.274,-0.298 0.59492,-0.37109 0.79492,-0.37109z">
+                    </path>
+                  </g>
+                </g>
+              </svg>&nbsp; whatsapp
+            </a>
+            <a href="https://www.instagram.com/ortomedicariopreto/?locale=es"><svg xmlns="http://www.w3.org/2000/svg"
+                x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8.53333,8.53333)">
+                    <path
+                      d="M9.99805,3c-3.859,0 -6.99805,3.14195 -6.99805,7.00195v10c0,3.859 3.14195,6.99805 7.00195,6.99805h10c3.859,0 6.99805,-3.14195 6.99805,-7.00195v-10c0,-3.859 -3.14195,-6.99805 -7.00195,-6.99805zM22,7c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM15,9c3.309,0 6,2.691 6,6c0,3.309 -2.691,6 -6,6c-3.309,0 -6,-2.691 -6,-6c0,-3.309 2.691,-6 6,-6zM15,11c-2.20914,0 -4,1.79086 -4,4c0,2.20914 1.79086,4 4,4c2.20914,0 4,-1.79086 4,-4c0,-2.20914 -1.79086,-4 -4,-4z">
+                    </path>
+                  </g>
+                </g>
+              </svg>&nbsp; Instagram</a>
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            <a href="https://www.facebook.com/ortomedica.riopreto/?locale=pt_BR"><svg xmlns="http://www.w3.org/2000/svg"
+                x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z">
+                    </path>
+                  </g>
+                </g>
+              </svg>&nbsp; Facebook</a>
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                viewBox="0,0,256,256">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M12,23.403v-0.013v-13.001l-0.12,-0.089h-0.01l-2.73,-2.02c-1.67,-1.24 -4.05,-1.18 -5.53,0.28c-0.99,0.98 -1.61,2.34 -1.61,3.85v3.602zM38,23.39v0.013l10,-7.391v-3.602c0,-1.49 -0.6,-2.85 -1.58,-3.83c-1.46,-1.457 -3.765,-1.628 -5.424,-0.403l-2.876,2.123l-0.12,0.089zM14,24.868l10.406,7.692c0.353,0.261 0.836,0.261 1.189,0l10.405,-7.692v-13.001l-11,8.133l-11,-8.133zM38,25.889v15.111c0,0.552 0.448,1 1,1h6.5c1.381,0 2.5,-1.119 2.5,-2.5v-21.003zM12,25.889l-10,-7.392v21.003c0,1.381 1.119,2.5 2.5,2.5h6.5c0.552,0 1,-0.448 1,-1z">
+                    </path>
+                  </g>
+                </g>
+              </svg> &nbsp; Email</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="credit">
+      Criado por Gabriel Riguetto & Matheus Mortari | &copy;
+      Copyrigth 2000-2024  Ortomédica 
+    </div>
+  </footer>
 
-            <!-- Seção Sobre Nós -->
-             <section class="about" id="sobre">
-                <h1 class="heading"> <span>Sobre</span> Nós</h1>
-                <div class="row">
-                    <div class="image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>Quem Nós Somos ? </h3>
-                        <p>Somos uma empresa local dedicada a oferecer [produtos/serviços oferecidos] de alta qualidade, sempre com um atendimento personalizado e preços acessíveis. Nosso objetivo é proporcionar a melhor experiência aos nossos clientes, garantindo confiança, com
-                            Estamos localizados em [endereço ou bairro] e atendemos tanto presencialmente quanto online! Venha nos visitar e conhecer nossas ofertas especiais.</p>
-                        <a href="#" class="btn">saiba mais</a>
-                        
-                       
-                    </div>
-                    <!-- fazer att aqui -->
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-             </section>
+  <!-- Puxando o JavaScript -->
+  <script src="ortomedica.js"></script>
 
-             <!-- Exibição de produtos  -->
-              <section class="products" id="produtos">
-                <h1 class="heading">Nossos <span>Produtos</span></h1>
-                <div class="box-container">
-                    <!-- Cards de Produtos (colocar imagens dos produtos) -->
-                    <div class="box">
-                        
-                        <div class="icons">
-                            <a href="#" class="fas fa-shopping-cart"></a>
-                        </div>
-                        <img src="imagens/bota_ortopedica.jpg" alt="Produto">
-                        <h3>Bota Ortopedica</h3>
-                    </div>
-                  
-                </div> 
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-              </section>
-              <!-- Fale com Conosco -->
-               <section class="contact" id="contato">
-                <h1 class="heading"><span>Contate</span>-Nós</h1>
-                <div class="row">
-                    <iframe src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1739988418834!5m2!1spt-BR!2sbr!6m8!1m7!1s529LL1l2JOdK1GLPzKUfKg!2m2!1d-20.80399498039062!2d-49.38582844980052!3f51.07516949357795!4f0.5275209233412426!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <form action="">
-                        <h3>Fale Conosco</h3>
-                    </form>
-                </div>
-               </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
-               <!-- Rodapé -->
-                <section class="footer">
-                    <div class="share">
-                        <!-- Colocar as redes sociais ou outra coisa (email) -->
-                    </div>
-                    <div class="links">
-                        <!-- botoes para voltar para o inicio e ir para o sobre nos  -->
-                         <a href="#home">Início</a>
-                         <a href="#about">Sobre Nós</a>
-                    </div>
-                    <div class="credit">Criado por <span>Gabriel Riguetto e Matheus Mortari</span></div>
-                </section>
-
-                <!-- Puxando o JavaScript -->
-                 <script src="ortomedica.js"></script>
-    
 </body>
+
 </html>
