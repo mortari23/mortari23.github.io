@@ -400,6 +400,8 @@ section {
 
 .products .box-container .box .image {
     padding: 2.5rem 0;
+    filter: drop-shadow(0 0 1rem rgba(235, 235, 235, 0.39));
+  
 }
 
 .products .box-container .box .image img {
@@ -411,13 +413,50 @@ section {
     font-size: 2.5rem;
 }
 
-.products .box-container .box .content .stars {
-    padding: 1.5rem;
+
+
+
+
+.products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+    overflow: hidden;
+    max-height: 2000px; 
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.products .box-container .box .content .stars i {
-    font-size: 1.7rem;
-    color: var(--main-color);
+.products .box-container.collapsed {
+    max-height: 950px;
+}
+
+.toggle-btn {
+    margin: 3rem auto;
+    display: block;
+    position: relative;
+    padding: 1.2rem 4rem;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-teal) 100%);
+    border: 2px solid var(--border-color);
+}
+
+.toggle-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: var(--hover-transition);
+}
+
+.toggle-btn:hover::after {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
 }
 
 
@@ -453,7 +492,7 @@ section {
  form .text {
     text-align: right;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #ffffff91;
 }
 form .img{
