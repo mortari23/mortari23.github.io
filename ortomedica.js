@@ -108,35 +108,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function fecharLightBox(e) {
-  if(e) e.stopPropagation();
-  const lightbox = document.getElementById("lightbox");
-  lightbox.style.display = "none";
-}
-
-document.addEventListener('click', (e) => {
-  if(e.target.dataset.lightbox === 'true') {
-    abrirLight(e.target.dataset.image);
-  }
-});
-
-// Adicione isso no final do seu arquivo JS
-document.addEventListener('DOMContentLoaded', () => {
-  // Delegar eventos de clique para todas as imagens
-  document.querySelectorAll('.image').forEach(img => {
-    img.onclick = () => abrirLight(img.src);
-  });
-});
-
 function abrirLight(imagem) {
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightboxImg");
-  
-  if(!lightbox || !lightboxImg) {
-    console.error('Elementos da lightbox não encontrados!');
-    return;
-  }
-  
   lightbox.style.display = "flex";
-  lightboxImg.src = imagem;
+  lightboxImg.src = imagem; // Corrigido aqui
+}
+
+function fecharLightBox() {
+  const lightbox = document.getElementById("lightbox");
+  lightbox.style.display = "none";
 }
