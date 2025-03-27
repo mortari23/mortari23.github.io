@@ -506,6 +506,7 @@ section {
   background: var(--fundo);
   flex-wrap: wrap;
   gap: 1rem;
+  width: 75%;
 }
 
 .contact .row .map {
@@ -576,6 +577,7 @@ form .img {
   border-radius: 16px;
   margin: 4rem auto;
   max-width: 1200px;
+  width: 80%;
 }
 
 .formulario .email {
