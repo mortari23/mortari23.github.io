@@ -654,6 +654,10 @@ footer ul li {
     display: inline-block;
   }
 
+  .Logo-search{
+    margin:0 auto;
+  }
+
   .header .navbar {
     position: absolute;
     top: 100%;
