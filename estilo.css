@@ -568,9 +568,93 @@ form .img {
   margin-left: 2rem;
 }
 
-/* ------------------------------- */
+/* Formulario */
+/* Estilos para a seção de formulário */
+.formulario {
+  background: var(--fundo);
+  padding: 5rem 0;
+  border-radius: 16px;
+  margin: 4rem auto;
+  max-width: 1200px;
+}
 
+.formulario .email {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem;
+  background: rgba(10, 25, 47, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 3, 31, 0.3);
+  border: var(--border);
+}
 
+.formulario .email label {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.formulario .email input,
+.formulario .email textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+  border: var(--border);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  transition: var(--hover-transition);
+}
+
+.formulario .email input:focus,
+.formulario .email textarea:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(42, 92, 143, 0.3);
+  outline: none;
+}
+
+.formulario .email textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.formulario .email button {
+  align-self: flex-start;
+  background: linear-gradient(
+    135deg, 
+    var(--primary-blue) 0%, 
+    var(--accent-teal) 100%
+  );
+  color: var(--text-primary);
+  padding: 1.2rem 3.5rem;
+  font-size: 1.7rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--hover-transition);
+  margin-top: 1rem;
+}
+
+.formulario .email button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(42, 92, 143, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .formulario .email {
+    padding: 2rem;
+    margin: 0 2rem;
+  }
+  
+  .formulario .email button {
+    width: 100%;
+  }
+}
 
 
 /* Rodapé */
