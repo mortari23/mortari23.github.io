@@ -506,7 +506,7 @@ section {
   background: var(--fundo);
   flex-wrap: wrap;
   gap: 1rem;
-  width: 65%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -578,7 +578,7 @@ form .img {
   border-radius: 16px;
   margin: 4rem auto;
   max-width: 1200px;
-  width: 70%;
+  width: 80%;
 }
 
 .formulario .email {
@@ -739,6 +739,11 @@ footer ul li {
   section {
     padding: 2rem;
   }
+
+  .contact .row{
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -788,6 +793,10 @@ footer ul li {
 
   .home .content p {
     font-size: 1.5rem;
+  }
+
+  .contact .row{
+    width: 80%;
   }
 }
 
