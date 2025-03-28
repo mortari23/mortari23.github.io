@@ -746,6 +746,10 @@ footer ul li {
   .contact .row{
     width: 100%;
   }
+
+  .formulario{
+    width: 50%;
+  }  
 }
 
 @media (max-width: 1024px){
@@ -756,6 +760,10 @@ footer ul li {
   .contact .row iframe{
     width: 40%;
   }
+
+  .formulario{
+    width: 80%;
+  } 
 }
 
 @media (max-width: 991px) {
@@ -775,11 +783,23 @@ footer ul li {
     width: 100%;
   }
 
+  .contact .row iframe{
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 768px) {
   #menu-btn {
     display: inline-block;
+  }
+
+  .formulario{
+    width: 80%;
+  } 
+
+  .contact .row iframe{
+    width: 100%;
   }
 
   .Logo-search{
