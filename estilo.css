@@ -729,6 +729,12 @@ footer ul li {
 }
 
 /* Responsividade */
+@media(max-width:2054px){
+  .contact .row iframe{
+    width: 40%;
+  }
+}
+
 @media(max-width: 1600px){
   .contact .row iframe{
     width: 60%;
@@ -758,7 +764,7 @@ footer ul li {
   }
 
   .contact .row iframe{
-    width: 100%;
+    width: 40%;
   }
 
   .formulario{
