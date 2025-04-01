@@ -740,7 +740,7 @@ footer ul li {
 }
 @media (max-width: 1440px){
   .contact .row iframe{
-    width: 60%;
+    width: 100%;
   }
 
   .contact .row{
