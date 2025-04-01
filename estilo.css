@@ -766,9 +766,9 @@ footer ul li {
   } 
 }
 
-@media (max-width: 1025px){
+@media (max-width: 1337px){
   .contact .row iframe{
-    width: 100%;
+    width: 50%;
   }
 }
 
